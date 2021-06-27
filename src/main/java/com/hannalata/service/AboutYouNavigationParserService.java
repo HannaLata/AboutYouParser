@@ -18,6 +18,7 @@ public class AboutYouNavigationParserService extends Thread {
     private final List<Item> items;
     private final String url;
     private final List<Thread> threads;
+    public static int counterRequest = 0;
 
     public AboutYouNavigationParserService(List<Item> items, String url, List<Thread> threads) {
         this.items = items;
@@ -30,7 +31,8 @@ public class AboutYouNavigationParserService extends Thread {
     public void run() {
         try {
             Document document = Jsoup.connect(url).get();
-            Thread.sleep(5000);
+            ++counterRequest;
+            Thread.sleep(1000);
             Elements productElements = document.getElementsByAttributeValue("data-test-id", "ProductTile");
             Set<String> itemLinks = new HashSet<>();
             productElements.forEach(it -> itemLinks.add(it.attr("href")));
@@ -42,6 +44,7 @@ public class AboutYouNavigationParserService extends Thread {
                     aboutYouProductParserService.start();
                 }
             }
+
         } catch (IOException e) {
             LOGGER.severe(String.format("Products by url %s was not extracted", url));
         }

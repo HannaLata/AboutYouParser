@@ -37,6 +37,8 @@ public class App {
         } while  (threadsFinished);
 
         LOGGER.info("Parser finished! " + items.size() + " items were extracted!");
+        LOGGER.info("Amount of triggered HTTP requests: " + (AboutYouProductParserService.counterRequest + AboutYouNavigationParserService.counterRequest));
+
 
         ItemMapper.convertObjectToJSON(items);
 

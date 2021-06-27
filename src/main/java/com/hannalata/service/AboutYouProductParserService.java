@@ -17,12 +17,16 @@ public class AboutYouProductParserService extends Thread {
 
     private final List<Item> items;
     private final String url;
+    private static final String attribute = "data-test-id";
+    public static int counterRequest = 0;
 
     @Override
     public void run() {
         try {
             Document document = Jsoup.connect(url).get();
-            Element productInfo = document.getElementsByAttributeValue("data-test-id", "BuyBox").first();
+            Thread.sleep(1000);
+            ++counterRequest;
+            Element productInfo = document.getElementsByAttributeValue(attribute, "BuyBox").first();
 
             String itemId = extractItemId(document);
             String name = extractName(productInfo);
@@ -46,7 +50,7 @@ public class AboutYouProductParserService extends Thread {
     private BigDecimal extractPrice(Element productInfo) {
         BigDecimal out = null;
         try {
-            String outAsText = productInfo.getElementsByAttributeValue("data-test-id", "ProductPriceFormattedBasePrice").first().text();
+            String outAsText = productInfo.getElementsByAttributeValue(attribute, "ProductPriceFormattedBasePrice").first().text();
             String outAsTextWithoutEUR = outAsText.replace(" EUR", "");
             String outAsTextReplaced = outAsTextWithoutEUR.replace(",", ".");
             out = new BigDecimal(outAsTextReplaced).setScale(2, RoundingMode.HALF_UP);
@@ -61,7 +65,7 @@ public class AboutYouProductParserService extends Thread {
     private BigDecimal extractSalePrice(Element productInfo) {
         BigDecimal out = null;
         try {
-            String outAsTextSale = productInfo.getElementsByAttributeValue("data-test-id", "FormattedSalePrice").first().text();
+            String outAsTextSale = productInfo.getElementsByAttributeValue(attribute, "FormattedSalePrice").first().text();
             String outAsTextWithoutEURSale = outAsTextSale.replace(" EUR", "");
             String outAsTextReplacedSale = outAsTextWithoutEURSale.replace(",", ".");
             out = new BigDecimal(outAsTextReplacedSale).setScale(2, RoundingMode.HALF_UP);
@@ -76,7 +80,7 @@ public class AboutYouProductParserService extends Thread {
     private List<String> extractColor(Element productInfo) {
         List<String> outs = null;
         try {
-            outs = productInfo.getElementsByAttributeValue("data-test-id", "ColorVariantColorInfo").eachText();
+            outs = productInfo.getElementsByAttributeValue(attribute, "ColorVariantColorInfo").eachText();
         } catch (Exception e) {
             LOGGER.severe(String.format("Item colors by url %s  was not extracted", url));
         }
@@ -97,7 +101,7 @@ public class AboutYouProductParserService extends Thread {
     private String extractName(Element productInfo) {
         String out = "";
         try{
-            out = productInfo.getElementsByAttributeValue("data-test-id", "ProductName").first().text();
+            out = productInfo.getElementsByAttributeValue(attribute, "ProductName").first().text();
         } catch (Exception e) {
             LOGGER.severe(String.format("Item name by url %s was not extracted", url));
         }
@@ -107,7 +111,7 @@ public class AboutYouProductParserService extends Thread {
     private String extractItemId(Element document) {
         String out = "";
         try {
-            out = document.getElementsByAttributeValue("data-test-id", "ArticleNumber").first().text();
+            out = document.getElementsByAttributeValue(attribute, "ArticleNumber").first().text();
         } catch (Exception e) {
             LOGGER.severe(String.format("Item id by url %s was not extracted", url));
         }

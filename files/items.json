@@ -1,56 +1,8 @@
 [ {
-  "id" : "Art.-Nr. ONS0376001000001",
-  "name" : "Jeans 'LOOM BLUE JOG PK 8472 NOOS'",
-  "brand" : "Only & Sons",
-  "colors" : [ "blue denim" ],
-  "price" : 32.90
-}, {
-  "id" : "Art.-Nr. 5714498848079",
-  "name" : "Jeansshorts",
-  "brand" : "JACK & JONES",
-  "colors" : [ "blau" ],
-  "price" : 39.90
-}, {
-  "id" : "Art.-Nr. THS0746008000002",
-  "name" : "Hemd",
-  "brand" : "TOMMY HILFIGER",
-  "colors" : [ "schwarz", "offwhite", "marine", "hellblau" ],
-  "price" : 69.90
-}, {
-  "id" : "Art.-Nr. JAC1767002000001",
-  "name" : "Hemd 'JJPRPARMA'",
-  "brand" : "JACK & JONES",
-  "colors" : [ "weiß", "schwarz", "navy", "hellblau" ],
-  "price" : 39.90
-}, {
-  "id" : "Art.-Nr. ONS2290001000001",
-  "name" : "Shorts",
-  "brand" : "Only & Sons",
-  "colors" : [ "blau" ],
-  "price" : 29.90
-}, {
-  "id" : "Art.-Nr. UCL0750001000001",
-  "name" : "Cargohose",
-  "brand" : "Urban Classics",
-  "colors" : [ "schwarz", "stone", "camel", "oliv" ],
-  "price" : 44.90
-}, {
-  "id" : "Art.-Nr. ADT1202001000006",
+  "id" : "Art.-Nr. ADT1202001000002",
   "name" : "Shirt 'Lock Up'",
   "brand" : "ADIDAS ORIGINALS",
   "colors" : [ "schwarz / weiß", "navy / weiß", "beige / weiß" ],
-  "price" : 29.90
-}, {
-  "id" : "Art.-Nr. ONS2288001000001",
-  "name" : "Jeansshorts 'Ply'",
-  "brand" : "Only & Sons",
-  "colors" : [ "blue denim" ],
-  "price" : 29.90
-}, {
-  "id" : "Art.-Nr. THS0906008000001",
-  "name" : "Shirt",
-  "brand" : "TOMMY HILFIGER",
-  "colors" : [ "dunkelblau", "schwarz", "weiß", "hellgrau" ],
   "price" : 29.90
 }, {
   "id" : "Art.-Nr. THS3046001000003",
@@ -59,23 +11,29 @@
   "colors" : [ "dunkelblau / rot / weiß", "dunkelblau / hellgrau / rot", "schwarz", "dunkelblau" ],
   "price" : 39.90
 }, {
+  "id" : "Art.-Nr. THS0746008000002",
+  "name" : "Hemd",
+  "brand" : "TOMMY HILFIGER",
+  "colors" : [ "schwarz", "offwhite", "marine", "hellblau" ],
+  "price" : 69.90
+}, {
   "id" : "Art.-Nr. JAC2223014000004",
   "name" : "Sweatshirt 'JJESOFT'",
   "brand" : "JACK & JONES",
   "colors" : [ "beige", "schwarz", "graumeliert", "weiß", "grün", "pitaya" ],
   "price" : 34.99
 }, {
-  "id" : "Art.-Nr. IND0003004000001",
-  "name" : "Shorts 'Conor'",
-  "brand" : "INDICODE JEANS",
-  "colors" : [ "anthrazit", "blau", "beige", "hellbraun", "grau", "weiß", "mint", "royalblau / karamell", "rosa" ],
-  "price" : 42.90
+  "id" : "Art.-Nr. 5714498848079",
+  "name" : "Jeansshorts",
+  "brand" : "JACK & JONES",
+  "colors" : [ "blau" ],
+  "price" : 39.99
 }, {
-  "id" : "Art.-Nr. MFX0119001000001",
-  "name" : "Hemd 'Logan'",
-  "brand" : "DAN FOX APPAREL",
-  "colors" : [ "schwarz", "khaki" ],
-  "price" : 39.90
+  "id" : "Art.-Nr. ONS2290001000001",
+  "name" : "Shorts",
+  "brand" : "Only & Sons",
+  "colors" : [ "blau" ],
+  "price" : 29.90
 }, {
   "id" : "Art.-Nr. ONS1499001000002",
   "name" : "Chinohose 'Mark'",
@@ -83,15 +41,57 @@
   "colors" : [ "nude", "khaki", "dunkelblau" ],
   "price" : 39.90
 }, {
+  "id" : "Art.-Nr. 0000U2662G001004",
+  "name" : "Trunks",
+  "brand" : "Calvin Klein Underwear",
+  "colors" : [ "schwarz", "blau / hellrot / schwarz / weiß", "schwarz / weiß", "weiß", "schwarz / weiß", "schwarz / weiß", "dunkelblau / hellgrau / mischfarben / hellrot / offwhite", "offwhite", "türkis / royalblau / grau", "schwarz", "grau / schwarz / weiß", "royalblau / hellrot / schwarz / weiß", "blau / rot / schwarz", "blau / rot / schwarz / weiß", "aqua / grau / tanne", "marine / aqua / tanne / schwarz", "blau / dunkelgrau / schwarz", "indigo / hellblau", "marine / violettblau / schwarz / weiß", "mischfarben", "nachtblau / himmelblau / graumeliert / weiß", "blau / nachtblau / gelb / hellgrau", "grau / weinrot / feuerrot / weiß", "orange / weinrot / schwarz / weiß", "hellblau / gelb / dunkelgrün / weiß" ],
+  "price" : 39.90
+}, {
+  "id" : "Art.-Nr. THS0906008000001",
+  "name" : "Shirt",
+  "brand" : "TOMMY HILFIGER",
+  "colors" : [ "dunkelblau", "schwarz", "weiß", "hellgrau" ],
+  "price" : 29.90
+}, {
+  "id" : "Art.-Nr. ONS0376001000001",
+  "name" : "Jeans 'LOOM BLUE JOG PK 8472 NOOS'",
+  "brand" : "Only & Sons",
+  "colors" : [ "blue denim" ],
+  "price" : 32.90
+}, {
   "id" : "Art.-Nr. NIS3641002000001",
   "name" : "Shorts",
   "brand" : "Nike Sportswear",
   "colors" : [ "creme / grünmeliert / schwarz", "weiß" ],
   "price" : 49.90
 }, {
-  "id" : "Art.-Nr. 0000U2662G001004",
-  "name" : "Trunks",
-  "brand" : "Calvin Klein Underwear",
-  "colors" : [ "schwarz", "blau / hellrot / schwarz / weiß", "schwarz / weiß", "weiß", "schwarz / weiß", "schwarz / weiß", "dunkelblau / hellgrau / mischfarben / hellrot / offwhite", "offwhite", "türkis / royalblau / grau", "schwarz", "grau / schwarz / weiß", "royalblau / hellrot / schwarz / weiß", "blau / rot / schwarz", "blau / rot / schwarz / weiß", "aqua / grau / tanne", "marine / aqua / tanne / schwarz", "blau / dunkelgrau / schwarz", "indigo / hellblau", "marine / violettblau / schwarz / weiß", "mischfarben", "nachtblau / himmelblau / graumeliert / weiß", "blau / nachtblau / gelb / hellgrau", "grau / weinrot / feuerrot / weiß", "orange / weinrot / schwarz / weiß", "hellblau / gelb / dunkelgrün / weiß" ],
+  "id" : "Art.-Nr. MFX0119001000001",
+  "name" : "Hemd 'Logan'",
+  "brand" : "DAN FOX APPAREL",
+  "colors" : [ "schwarz", "khaki" ],
   "price" : 39.90
+}, {
+  "id" : "Art.-Nr. JAC1767002000001",
+  "name" : "Hemd 'JJPRPARMA'",
+  "brand" : "JACK & JONES",
+  "colors" : [ "weiß", "schwarz", "navy", "hellblau" ],
+  "price" : 39.90
+}, {
+  "id" : "Art.-Nr. UCL0750001000001",
+  "name" : "Cargohose",
+  "brand" : "Urban Classics",
+  "colors" : [ "schwarz", "stone", "camel", "oliv" ],
+  "price" : 44.90
+}, {
+  "id" : "Art.-Nr. JAC0902004000001",
+  "name" : "Hemd 'SHERIDAN'",
+  "brand" : "JACK & JONES",
+  "colors" : [ "black denim", "grau / grey denim", "blue denim" ],
+  "price" : 39.99
+}, {
+  "id" : "Art.-Nr. IND0003004000001",
+  "name" : "Shorts 'Conor'",
+  "brand" : "INDICODE JEANS",
+  "colors" : [ "anthrazit", "blau", "beige", "hellbraun", "grau", "weiß", "mint", "royalblau / karamell", "rosa" ],
+  "price" : 42.90
 } ]
